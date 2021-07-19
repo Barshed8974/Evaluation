@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Welcome To Covid Details"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/rectangle"
+        android:layout_margin="30sp"
+        android:hint="Enter Your Email id"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/rectangle"
+        android:layout_margin="30sp"
+        android:hint="Enter Your Password"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="60sp"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/chkbox"
+            android:text="Remember me"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle"
+        android:text="Login"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
